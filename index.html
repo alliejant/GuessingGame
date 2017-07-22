@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Allie's Guessing Game</title>
+
+   <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div id="left-side" class="col-sm-5">
+          <h1>Guessing game</h1>
+          <img src="thinking.jpeg" class="hidden-xs">
+      </div>
+
+      <div id="right-side" class="col-sm-6 col-sm-offset-1">
+        <div id="spacer" class="hidden-xs"></div>
+        <div id="dialog"></div>
+
+        <div id = "box">
+          <h4>Guess a number between 1 - 100</h4>
+          <h5>You will have 5 chances to get it right</h5>
+          <input id="player-input" placeholder="#" maxlength='3' autofocus=autofocus></input>
+          <button id="submit">Go!</button>
+
+          <div id="guesses">
+            <ul>
+              <li>_</li>
+              <li>_</li>
+              <li>_</li>
+              <li>_</li>
+              <li>_</li>
+            </ul>
+          </div>
+
+          <button id="reset">Reset</button>
+          <button id="hint">Hint</button>
+        </div>
+
+        <div id="hint-dialog"></div>
+     </div>
+
+
+    <div id='footer' class="row">
+        <div>
+          <div class="col-sm-4 hidden-xs">
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class="col-xs-12 col-xs-offset-4 col-sm-4 col-sm-offset-0">
+            <h4>Project by Allie</h4>
+          </div>
+
+          <div class="col-sm-4 hidden-xs">
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="func.js"></script>
+  </body>
+</html>
